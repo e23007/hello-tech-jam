@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { ThemeToggle } from "@/components/theme-toggle";
+// import { ThemeToggle } from "@/components/theme-toggle";
  
 async function fetchShops(keyword?: string): Promise<Shop[]> {
   const query = new URLSearchParams();
@@ -39,7 +39,7 @@ const GourmetsClient = ({ initialShops }: { initialShops: Shop[] }) => {
   return (
     <div className="flex flex-col items-center justify-start min-h-screen pt-36 px-8 md:px-12 lg:px-16">
       <div className="absolute top-4 right-4">
-        <ThemeToggle />
+        {/* <ThemeToggle /> */}
       </div>
       <form onSubmit={handleSearch} className="flex items-center space-x-4 mb-8">
         <Input
